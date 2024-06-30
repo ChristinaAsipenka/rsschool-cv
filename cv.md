@@ -41,7 +41,7 @@ and approaches.
 
 ## Code example
 
-```
+```php
 <?php
 declare(strict_types=1);
 
