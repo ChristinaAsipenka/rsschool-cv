@@ -6,11 +6,11 @@
 
 **Phone:** +48 452 202 441
 
-**Location:** Krakow, Poland
+**Location:** Poland
 
 **Linkedin** [Christina Asipenka](https://www.linkedin.com/in/christina-asipenka-b19a6513b)
 
-**Full CV** [CV]()
+**Full CV** [CV](https://github.com/ChristinaAsipenka/rsschool-cv/blob/gh-pages/CV/Christina_Asipenka_PHP_Developer.pdf)
 
 ## Profile
 
