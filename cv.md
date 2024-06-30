@@ -10,7 +10,7 @@
 
 **Linkedin** [Christina Asipenka](https://www.linkedin.com/in/christina-asipenka-b19a6513b)
 
-**Full CV** [CV](https://github.com/ChristinaAsipenka/rsschool-cv/blob/gh-pages/CV/Christina_Asipenka_PHP_Developer.pdf)
+**Full CV** [CV Link](https://github.com/ChristinaAsipenka/rsschool-cv/blob/gh-pages/CV/Christina_Asipenka_PHP_Developer.pdf)
 
 ## Profile
 
