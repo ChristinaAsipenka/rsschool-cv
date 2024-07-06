@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    margin: 0;
+}
+.section{
+    display: flex;
+    align-items: center;
+    margin: 40px 0 20px;
+}
+.section-header{
+    width: 30%;
+    text-align: center;
+}
+.section-content{
+    width: 70%;
+}
+h3 {
+    text-align: center; /* Center-align the text */
+    position: relative; /* Establish positioning context for pseudo-element */
+    display: inline-block; /* Make sure the underline respects text width */
+}
+h3::after {
+    content: '';
+    display: block;
+    width: 87%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -2px;
+    left: 5%;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+/*header*/
+header{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu li {
+    list-style: none;
+    margin-right: 32px;
+}
+
+.header-menu a {
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 0;
+    position: relative;
+    font-weight: 800;
+}
+.header-menu a:hover{
+    color: #939393;
+}
+.header{
+    text-align: center;
+}
+.main-info{
+    display: flex;
+    align-items: center;
+}
+/**/
+.img-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #939393;
+    margin-right: 20px;
+}
+.profile-photo{
+    filter: grayscale(100%);
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-me{
+    flex: 1;
+}
+/* SKILLS */
+#skills {
+    margin: 0 auto; /* Center align the section */
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+#skills li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+#language ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+footer div{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+footer .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rs-school-img{
+    width: 82px;
+    height: auto;
+}
+.decorative-line {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.decorative-line::before,
+.decorative-line::after {
+    content: '';
+    display: inline-block;
+    width: calc(50% - 10px);
+    height: 1px;
+    background: black;
+    vertical-align: middle;
+}
+
+.decorative-line::before {
+    margin-right: 5px;
+}
+
+.decorative-line::after {
+    margin-left: 5px;
+}
+
+.decorative-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
