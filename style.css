@@ -29,9 +29,9 @@ body{
     width: 70%;
 }
 h3 {
-    text-align: center; /* Center-align the text */
-    position: relative; /* Establish positioning context for pseudo-element */
-    display: inline-block; /* Make sure the underline respects text width */
+    text-align: center;
+    position: relative;
+    display: inline-block;
 }
 h3::after {
     content: '';
