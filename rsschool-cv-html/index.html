@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christina Asipenka | PHP Developer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <ul class="header-menu">
+            <li><a href="#contacts-and-links">Contacts & Links</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code-example">Code example</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#language">Languages</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div class="wrapper">
+        <section>
+            <div class="header">
+                <h1>Christina Asipenka</h1>
+                <h2>PHP Developer</h2>
+            </div>
+            <div class="main-info">
+                <div class="img-container">
+                    <img src="images/photo_2024-07-06_12-49-01.jpg" alt="Christina Asipenka" class="profile-photo">
+                </div>
+                <div class="about-me">
+                    <p>PHP developer with 4+ years of experience in web development. Have a solid knowledge of Symfony
+                        and Laravel frameworks, JavaScript, SQL.</p>
+                    <p>I am focused on writing clean and maintainable code using design patterns, good architecture and
+                        SOLID principles. I always apply a creative approach to offer the best solutions for every
+                        project to customers.</p>
+                    <p>I am a perfect team player, detail oriented and hard-working developer. Ready to master new
+                        technologies and approaches.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts-and-links" class="section">
+            <div class="section-header">
+                <h3>Contacts & Links</h3>
+            </div>
+            <div class="section-content">
+                <p><strong>e-mail:</strong> <a href="mailto:krystinabutko@gmail.com">krystinabutko@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+48452202441">+48 452 202 441</a></p>
+                <p><strong>Location:</strong> Poland</p>
+                <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/christina-asipenka-b19a6513b"
+                                                 target="_blank">Christina Asipenka</a></p>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h3>Skills</h3>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>PHP (Symfony, Laravel, CMS)</li>
+                    <li>Docker</li>
+                    <li>PHPUnit</li>
+                    <li>Design Patterns</li>
+                    <li>JS (Vue.js)</li>
+                    <li>SQL (MySQL, MariaDB)</li>
+                    <li>RabbitMQ</li>
+                    <li>Linux (Ubuntu)</li>
+                    <li>Git (GitLab, Bitbucket)</li>
+                    <li>CI/CD</li>
+                    <li>Jira</li>
+                    <li>SCRAM</li>
+                    <li>HTML, CSS</li>
+                </ul>
+            </div>
+        </section>
+        <section id="education" class="section">
+            <div class="section-header">
+                <h3>Education</h3>
+            </div>
+            <div class="section-content">
+                <p><strong>Belorussian State College of Telecommunications</strong></p>
+                <p><i>Telecommunications Network Technician (Software)</i></p>
+            </div>
+        </section>
+        <section id="work-experience" class="section">
+            <div class="section-header">
+                <h3>Work Experience</h3>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>
+                        <p><span>10/2022 - 03/2024</span> <strong>AndersenLab</strong> <i>PHP developer</i></p>
+                    </li>
+                    <li>
+                        <p><span>10/2017 - 09/2022</span> <strong>Belorussian State Energy and Gas Supervision</strong>
+                            <i>Lead
+                                Software Developer</i></p>
+                    </li>
+                    <li>
+                        <p><span>01/2017 - 10/2017</span> <strong>E-Commerce websites</strong> <i>Full-stack
+                            developer</i>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span>08/2006 - 09/2016</span> <strong>Open Joint Stock Company “Vitebsk Factory of
+                            Electrical
+                            Tools</strong> <i>Software Developer</i></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="code-example" class="section">
+            <div class="section-header">
+                <h3>Code example</h3>
+            </div>
+            <div class="section-content">
+            <pre><code>
+            &lt;?php
+            declare(strict_types=1);
+
+            namespace App\Service;
+
+            use App\Entity\MoneyEntity;
+            use App\Entity\TransactionEntity;
+            use App\Interface\CalculatorInterface;
+            use Symfony\Component\String\Exception\RuntimeException;
+
+            class CalculateCommissionService
+            {
+                private array $calculatorMap;
+
+                public function __construct(private readonly iterable $calculators)
+                {
+                    foreach ($this->calculators as $calculator) {
+                        $this->calculatorMap[$calculator->getType()] = $calculator;
+                    }
+                }
+
+                public function calculate(TransactionEntity $data): MoneyEntity
+                {
+                    return $this->getCalculator($data->getOperationType())->calculate($data);
+                }
+
+                private function getCalculator(string $operationType): CalculatorInterface
+                {
+                    try {
+                        return $this->calculatorMap[$operationType];
+                    } catch (\Throwable $e) {
+                        throw new RuntimeException(sprintf(
+                                'There is not any calculator for provided operation: %s',
+                                $this->calculatorMap[$operationType]
+                        ));
+                    }
+                }
+            }
+            ?&gt;
+        </code></pre>
+            </div>
+        </section>
+        <section id="language" class="section">
+            <div class="section-header">
+                <h3>Languages</h3>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>Russian - native</li>
+                    <li>English - B2</li>
+                    <li>Polish - A2</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="wrapper">
+        <div class="decorative-line">
+            <span class="decorative-dot"></span>
+        </div>
+        <div class="footer-content">
+            <p>&copy;Christina Asipenka 2024</p>
+            <p><a href="https://github.com/ChristinaAsipenka" target="_blank">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/christina-asipenka-b19a6513b" target="_blank">LinkedIn</a></p>
+            <p><a href="https://rs.school/courses/javascript-ru" target="_blank"><img src="/images/rs_school_js.svg"
+                                                                                      alt="rs-school"
+                                                                                      class="rs-school-img"></a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
