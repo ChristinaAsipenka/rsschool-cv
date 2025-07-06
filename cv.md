@@ -6,11 +6,11 @@
 
 **Phone:** +48 452 202 441
 
+**Discord** christina006470 
+
 **Location:** Poland
 
 **Linkedin** [Christina Asipenka](https://www.linkedin.com/in/christina-asipenka-b19a6513b)
-
-**Full CV** [CV Link](https://github.com/ChristinaAsipenka/rsschool-cv/blob/gh-pages/CV/Christina_Asipenka_PHP_Developer.pdf)
 
 ## Profile
 
@@ -21,7 +21,7 @@ architecture and SOLID principles. I always apply a creative approach to offer
 the best solutions for every project to customers. I am a perfect team player,
 detail oriented and hard-working developer. Ready to master new technologies
 and approaches.
-****
+**
 ## Skills
 
 * PHP (Symfony, Laravel, CMS, CakePHP)
