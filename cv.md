@@ -21,7 +21,7 @@ architecture and SOLID principles. I always apply a creative approach to offer
 the best solutions for every project to customers. I am a perfect team player,
 detail oriented and hard-working developer. Ready to master new technologies
 and approaches.
-**
+
 ## Skills
 
 * PHP (Symfony, Laravel, CMS, CakePHP)
