@@ -38,7 +38,6 @@ and approaches.
 * SCRAM
 * HTML, CSS
 * AWS
-****
 
 ## Code example
 
