@@ -15,20 +15,20 @@
 ## Profile
 
 PHP developer with 4+ years of experience in web development. Have a solid
-knowledge of Symfony and Laravel frameworks, JavaScript, SQL.
+knowledge of Symfony, Laravel and CakePHP frameworks, JavaScript, SQL.
 I’m focused on writing clean and maintainable code using design patterns, good
 architecture and SOLID principles. I always apply a creative approach to offer
 the best solutions for every project to customers. I am a perfect team player,
 detail oriented and hard-working developer. Ready to master new technologies
 and approaches.
-***
+****
 ## Skills
 
-* PHP (Symfony, Laravel, CMS)
+* PHP (Symfony, Laravel, CMS, CakePHP)
 * Docker
 * PHPUnit
 * Design Patterns
-* JS (Vue.js)
+* JS (Vue.js, JQGreed)
 * SQL (MySQL, MariaDB)
 * RabbitMQ
 * Linux (Ubuntu)
@@ -37,6 +37,7 @@ and approaches.
 * Jira
 * SCRAM
 * HTML, CSS
+* AWS
 ****
 
 ## Code example
